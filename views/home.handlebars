@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío MERCADO WEB</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-4 mb-4">
+            <h1>BIENVENIDO AL MERCADO WEB</h1>
+        </div>
+        <div class="row">
+            {{#each productos}}
+            <div class="col-lg-4 col-md-6 mb-4">
+                {{> card
+                    fruta = this
+                }}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</html>
